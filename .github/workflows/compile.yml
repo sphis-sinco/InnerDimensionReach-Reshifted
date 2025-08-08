@@ -3,8 +3,14 @@ name: Auto-compiled builds
 on:
         push:
                 branches-ignore: [randomBranchName]
+                paths:
+                        - '**.hx'
+                        - '**.hxc'
         pull_request:
                 branches-ignore: [randomBranchName]
+                paths:
+                        - '**.hx'
+                        - '**.hxc'
 
         workflow_dispatch:
 
